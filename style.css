@@ -1,13 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
+header, footer {
+  background-color: #333;
+  color: #fff;
   padding: 1em;
   text-align: center;
 }
@@ -15,34 +14,32 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  padding: 1em;
-  background-color: #333;
+  background-color: #4CAF50;
 }
 
 nav a {
   color: white;
   margin: 0 15px;
+  padding: 14px;
   text-decoration: none;
 }
 
+nav a:hover {
+  background-color: #3e8e41;
+  border-radius: 5px;
+}
+
 section {
+  background-color: #fff;
   padding: 2em;
   margin: 1em 5%;
-  background-color: white;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+form label, form input, form textarea {
   display: block;
-  margin: 0.5em 0 0.2em;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  margin: 0.5em 0;
 }
 
 button {
@@ -53,3 +50,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+footer p {
+  margin: 0;
+}
+
